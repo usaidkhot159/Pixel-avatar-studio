@@ -1,0 +1,16 @@
+body {
+  font-family: var(--font-ui);
+  background: var(--bg);
+  color: var(--text-2);
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-area {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  min-width: 0;
+  overflow: hidden;
+}
