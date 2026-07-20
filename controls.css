@@ -1,0 +1,27 @@
+/* ── TOAST ─────────────────────────────────────────────────── */
+.toast {
+  position: fixed;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%) translateY(70px);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface-1);
+  border: 1.5px solid var(--border-hi);
+  color: var(--text-1);
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 11px 22px;
+  border-radius: var(--r-pill);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  opacity: 0;
+  transition: transform 0.35s var(--ease), opacity 0.35s;
+  z-index: 999;
+  pointer-events: none;
+}
+.toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
