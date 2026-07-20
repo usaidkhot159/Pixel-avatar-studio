@@ -1,0 +1,60 @@
+:root {
+  /* ── PALETTE ─────────────────────────────────────────
+     Inspired by Roblox Studio / Avatar Editor:
+     Deep navy base, crisp white cards, vivid teal accent
+  ──────────────────────────────────────────────────── */
+
+  /* Base surfaces */
+  --bg:          #1A1D2E;   /* deepest navy — main bg */
+  --surface-1:   #222538;   /* sidebar bg */
+  --surface-2:   #2A2E45;   /* shop panel bg */
+  --surface-3:   #323756;   /* card bg */
+  --surface-4:   #3C4168;   /* card hover */
+
+  /* Borders */
+  --border:      #3A3F5C;
+  --border-hi:   #4E5580;
+
+  /* Accent — Roblox teal/blue */
+  --accent:      #00C8E0;   /* main teal */
+  --accent-dim:  rgba(0,200,224,0.14);
+  --accent-glow: rgba(0,200,224,0.30);
+  --accent-2:    #0098B0;   /* darker teal for pressed */
+
+  /* Green for save / confirm */
+  --green:       #00D166;
+  --green-dim:   rgba(0,209,102,0.15);
+  --green-glow:  rgba(0,209,102,0.35);
+
+  /* Red for danger */
+  --red:         #FF4757;
+  --red-dim:     rgba(255,71,87,0.15);
+
+  /* Text */
+  --text-1:      #FFFFFF;
+  --text-2:      #C8CCDC;
+  --text-3:      #7D839E;
+  --text-4:      #4E5370;
+
+  /* Stage gradient */
+  --stage-top:   #0F1220;
+  --stage-mid:   #1A2040;
+  --stage-floor: #131729;
+
+  /* ── TYPE ──────────────────────────────────────────── */
+  --font-ui:     'Nunito', sans-serif;
+  --font-body:   'Nunito Sans', sans-serif;
+
+  /* ── SHAPE ─────────────────────────────────────────── */
+  --r-sm:  6px;
+  --r-md:  10px;
+  --r-lg:  14px;
+  --r-xl:  20px;
+  --r-pill:40px;
+
+  /* ── MOTION ─────────────────────────────────────────── */
+  --ease:   cubic-bezier(0.22, 1, 0.36, 1);
+  --t-fast: 110ms;
+  --t-mid:  200ms;
+  --t-slow: 340ms;
+}
