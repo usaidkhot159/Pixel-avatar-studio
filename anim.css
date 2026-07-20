@@ -1,0 +1,46 @@
+/* ── Page load ── */
+.sidebar   { animation: slideLeft  0.35s var(--ease) both; }
+.stage     { animation: fadeUp     0.4s  var(--ease) 0.05s both; }
+.shop-panel{ animation: slideRight 0.35s var(--ease) both; }
+
+@keyframes slideLeft  { from { opacity:0; transform: translateX(-20px);} to { opacity:1; transform:none; } }
+@keyframes slideRight { from { opacity:0; transform: translateX(20px); } to { opacity:1; transform:none; } }
+@keyframes fadeUp     { from { opacity:0; transform: translateY(12px);} to { opacity:1; transform:none; } }
+
+/* ── Item cards stagger ── */
+.item-card { animation: cardPop 0.22s var(--ease) both; }
+
+@keyframes cardPop {
+  from { opacity:0; transform: scale(0.85); }
+  to   { opacity:1; transform: scale(1); }
+}
+
+/* ── Bounce on select ── */
+@keyframes bounce {
+  0%,100% { transform: scale(1); }
+  40%      { transform: scale(1.08); }
+  70%      { transform: scale(0.96); }
+}
+.avatar-frame.bounce { animation: bounce 0.4s var(--ease); }
+
+/* ── Randomize spin ── */
+@keyframes spinBounce {
+  0%   { transform: rotate(0deg) scale(1); }
+  30%  { transform: rotate(-8deg) scale(1.04); }
+  60%  { transform: rotate(8deg) scale(0.97); }
+  100% { transform: rotate(0deg) scale(1); }
+}
+.avatar-frame.spin { animation: spinBounce 0.45s var(--ease); }
+
+/* ── Download flash ── */
+@keyframes greenFlash {
+  0%   { box-shadow: 0 0 0 1px rgba(0,200,224,0.12), 0 0 0 rgba(0,209,102,0); }
+  40%  { box-shadow: 0 0 0 1px rgba(0,209,102,0.6),  0 0 30px rgba(0,209,102,0.4); }
+  100% { box-shadow: 0 0 0 1px rgba(0,200,224,0.12), 0 0 0 rgba(0,209,102,0); }
+}
+.avatar-frame.flash { animation: greenFlash 0.7s ease; }
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
