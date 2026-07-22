@@ -1,10 +1,6 @@
 # 🎨 Pixel Avatar Creator
 
 <p align="center">
-  <img src="assets/banner.png" alt="Pixel Avatar Creator Banner" width="100%">
-</p>
-
-<p align="center">
   <strong>Create your own retro-style pixel avatar with hundreds of possible combinations.</strong>
 </p>
 
